@@ -65,7 +65,7 @@ public class CFLibDbUtil {
 	
 	public static void setDbServerTimeZone( TimeZone tz ) {
 		if( tz == null ) {
-			throw new InvalidArgumentException( "TimeZone tz is null" )
+			throw new IllegalArgumentException( "TimeZone tz is null" );
 		}
 		dbServerTimeZone = tz;
 		dbServerTZOffsetMillis = tz.getRawOffset();
