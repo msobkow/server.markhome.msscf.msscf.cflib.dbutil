@@ -192,15 +192,6 @@ public class CFLibDbKeyHash224 extends CFLibDbKeyHashBase<CFLibDbKeyHash224> imp
     return anId == null || anId.isNull();
   }
 
-  public static final String getJava(CFLibDbKeyHash224 id) {
-    if (id == null) {
-      return "null";
-    }
-    else {
-      return String.format("new CFLibDbKeyHash224(\"%s\")", id.toString());
-    }
-  }
-
   @Override
   public byte[] getBytes() {
     return bytes;

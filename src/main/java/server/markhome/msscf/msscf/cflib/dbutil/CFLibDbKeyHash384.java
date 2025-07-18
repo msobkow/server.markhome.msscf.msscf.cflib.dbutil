@@ -170,15 +170,6 @@ public class CFLibDbKeyHash384 extends CFLibDbKeyHashBase<CFLibDbKeyHash384> imp
     return anId == null || anId.isNull();
   }
 
-  public static final String getJava(CFLibDbKeyHash384 id) {
-    if (id == null) {
-      return "null";
-    }
-    else {
-      return String.format("new CFLibDbKeyHash384(\"%s\")", id.toString());
-    }
-  }
-
   @Override
   public byte[] getBytes() {
     return bytes;

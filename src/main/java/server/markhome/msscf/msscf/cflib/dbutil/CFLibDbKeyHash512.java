@@ -159,15 +159,6 @@ public class CFLibDbKeyHash512 extends CFLibDbKeyHashBase<CFLibDbKeyHash512> imp
     return anId == null || anId.isNull();
   }
 
-  public static final String getJava(CFLibDbKeyHash512 id) {
-    if (id == null) {
-      return "null";
-    }
-    else {
-      return String.format("new CFLibDbKeyHash512(\"%s\")", id.toString());
-    }
-  }
-
   @Override
   public byte[] getBytes() {
     return bytes;

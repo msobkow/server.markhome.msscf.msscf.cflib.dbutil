@@ -192,15 +192,6 @@ public class CFLibDbKeyHash128 extends CFLibDbKeyHashBase<CFLibDbKeyHash128> imp
     return anId == null || anId.isNull();
   }
 
-  public static final String getJava(CFLibDbKeyHash128 id) {
-    if (id == null) {
-      return "null";
-    }
-    else {
-      return String.format("new CFLibDbKeyHash128(\"%s\")", id.toString());
-    }
-  }
-
   public byte[] getBytes() {
     return bytes;
   }

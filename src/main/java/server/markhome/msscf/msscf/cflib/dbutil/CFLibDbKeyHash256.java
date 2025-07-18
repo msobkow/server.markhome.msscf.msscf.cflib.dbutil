@@ -181,15 +181,6 @@ public class CFLibDbKeyHash256 extends CFLibDbKeyHashBase<CFLibDbKeyHash256> imp
     return anId == null || anId.isNull();
   }
 
-  public static final String getJava(CFLibDbKeyHash256 id) {
-    if (id == null) {
-      return "null";
-    }
-    else {
-      return String.format("new CFLibDbKeyHash256(\"%s\")", id.toString());
-    }
-  }
-
   @Override
   public byte[] getBytes() {
     return bytes;
