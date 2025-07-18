@@ -22,7 +22,6 @@
 package server.markhome.msscf.msscf.cflib.dbutil;
 
 import jakarta.persistence.Column;
-import jakarta.persistence.Convert;
 import jakarta.persistence.Embeddable;
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
