@@ -164,13 +164,8 @@ public class CFLibDbKeyHash512 extends CFLibDbKeyHashBase<CFLibDbKeyHash512> imp
       return "null";
     }
     else {
-      return String.format("new CFLibDbKeyHash512(\"%s\")", id.asString());
+      return String.format("new CFLibDbKeyHash512(\"%s\")", id.toString());
     }
-  }
-
-  @Override
-  public String toString() {
-    return asString();
   }
 
   @Override
@@ -388,6 +383,6 @@ public class CFLibDbKeyHash512 extends CFLibDbKeyHashBase<CFLibDbKeyHash512> imp
   }
 
   public static String getUString() {
-    return new CFLibDbKeyHash512(23934).asString();
+    return new CFLibDbKeyHash512(23934).toString();
   }
 }

@@ -225,20 +225,7 @@ public abstract class CFLibDbKeyHashBase<T extends CFLibDbKeyHashBase<T>> implem
     }
   }
 
-  public String asString() {
-    byte[] b = getBytes();
-    if (b == null) {
-      return "null";
-    }
-    StringBuilder sb = new StringBuilder(b.length * 2);
-    for (int i = 0; i < getHashLength(); i++) {
-      sb.append(hexDigits.charAt((b[i] & 0xF0) >>> 4));
-      sb.append(hexDigits.charAt(b[i] & 0x0F));
-    }
-    return sb.toString();
-  }
-
-  public void asString(StringBuilder sb) {
+  public void toString(StringBuilder sb) {
     // Construct and return the representive hex string
     byte[] b = getBytes();
     for (int i = 0; i < getHashLength(); i++) {
@@ -249,7 +236,16 @@ public abstract class CFLibDbKeyHashBase<T extends CFLibDbKeyHashBase<T>> implem
 
   @Override
   public String toString() {
-    return asString();
+    byte[] b = getBytes();
+    if (b == null) {
+      return "null";
+    }
+    StringBuilder sb = new StringBuilder(b.length * 2);
+    for (int i = 0; i < getHashLength(); i++) {
+      sb.append(hexDigits.charAt((b[i] & 0xF0) >>> 4));
+      sb.append(hexDigits.charAt(b[i] & 0x0F));
+    }
+    return sb.toString();
   }
 
   @Override
