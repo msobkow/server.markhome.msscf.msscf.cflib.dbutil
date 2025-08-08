@@ -383,8 +383,4 @@ public class CFLibDbKeyHash384 extends CFLibDbKeyHashBase<CFLibDbKeyHash384> imp
     return r;
 
   }
-
-  public static String getUString() {
-    return new CFLibDbKeyHash384(23934).toString();
-  }
 }

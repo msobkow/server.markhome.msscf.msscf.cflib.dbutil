@@ -372,8 +372,4 @@ public class CFLibDbKeyHash512 extends CFLibDbKeyHashBase<CFLibDbKeyHash512> imp
     return r;
 
   }
-
-  public static String getUString() {
-    return new CFLibDbKeyHash512(23934).toString();
-  }
 }

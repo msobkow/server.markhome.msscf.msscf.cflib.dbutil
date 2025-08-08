@@ -404,8 +404,4 @@ public class CFLibDbKeyHash128 extends CFLibDbKeyHashBase<CFLibDbKeyHash128> imp
     return r;
 
   }
-
-  public static String getUString() {
-    return new CFLibDbKeyHash128(23934).toString();
-  }
 }

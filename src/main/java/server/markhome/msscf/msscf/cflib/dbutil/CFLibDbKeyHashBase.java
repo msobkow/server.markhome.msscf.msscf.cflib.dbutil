@@ -291,9 +291,5 @@ public abstract class CFLibDbKeyHashBase<T extends CFLibDbKeyHashBase<T>> implem
     return result;
   }
 
-  public byte[] fingerprint() {
-    return getBytes();
-  }
-
   public abstract T deepClone();
 }

@@ -25,7 +25,7 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 
 /**
- *
+ * The CFLibDbHostAddr is a packed address for either IPV4 or IPV6 addresses, with indicators and detectors for which is which.
  * @author msobkow
  */
 public final class CFLibDbHostAddr {
